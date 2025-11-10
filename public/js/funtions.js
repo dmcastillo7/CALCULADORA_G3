@@ -48,6 +48,12 @@ function calcular() {
         case '+':
             resultado = primerNumero + segundoNumero;
             break;
+        
+        // Resta (Alejandro Simba)
+        case '-':
+        resultado = primerNumero - segundoNumero;
+            break;
+
         default:
             return;
     }
