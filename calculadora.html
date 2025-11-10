@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo 3 | Calculadora Básica</title>
+    <link href="public/vendor/bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="public/css/style.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <!-- Calculadora -->
+                <div class="calculator">
+                    <h2 class="text-center mb-4 text-primary">Calculadora Básica</h2>
+                    
+                    <!-- Pantalla de la calculadora -->
+                    <div class="display" id="display">0</div>
+                    
+                    <!-- Botones de la calculadora -->
+                    <div class="row g-2">
+                        <!-- Fila 1: Botones de limpieza -->
+                        <div class="col-6">
+                            <button class="btn btn-clear btn-calc w-100" onclick="limpiarTodo()">
+                                C
+                            </button>
+                        </div>
+                        <div class="col-6">
+                            <button class="btn btn-warning btn-calc w-100" onclick="limpiarEntrada()">
+                                CE
+                            </button>
+                        </div>
+                        
+                        <!-- Fila 2: Números 7,8,9 y división -->
+                        <div class="col-3">
+                            <button class="btn btn-number btn-calc w-100" onclick="agregarNumero('7')">
+                                7
+                            </button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-number btn-calc w-100" onclick="agregarNumero('8')">
+                                8
+                            </button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-number btn-calc w-100" onclick="agregarNumero('9')">
+                                9
+                            </button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-operator btn-calc w-100" onclick="elegirOperacion('/')">
+                                ÷
+                            </button>
+                        </div>
+                        
+                        <!-- Fila 3: Números 4,5,6 y multiplicación -->
+                        <div class="col-3">
+                            <button class="btn btn-number btn-calc w-100" onclick="agregarNumero('4')">
+                                4
+                            </button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-number btn-calc w-100" onclick="agregarNumero('5')">
+                                5
+                            </button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-number btn-calc w-100" onclick="agregarNumero('6')">
+                                6
+                            </button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-operator btn-calc w-100" onclick="elegirOperacion('*')">
+                                ×
+                            </button>
+                        </div>
+                        
+                        <!-- Fila 4: Números 1,2,3 y resta -->
+                        <div class="col-3">
+                            <button class="btn btn-number btn-calc w-100" onclick="agregarNumero('1')">
+                                1
+                            </button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-number btn-calc w-100" onclick="agregarNumero('2')">
+                                2
+                            </button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-number btn-calc w-100" onclick="agregarNumero('3')">
+                                3
+                            </button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-operator btn-calc w-100" onclick="elegirOperacion('-')">
+                                -
+                            </button>
+                        </div>
+                        
+                        <!-- Fila 5: Número 0, punto decimal, igual y suma -->
+                        <div class="col-6">
+                            <button class="btn btn-number btn-calc w-100" onclick="agregarNumero('0')">
+                                0
+                            </button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-number btn-calc w-100" onclick="agregarPunto()">
+                                .
+                            </button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-operator btn-calc w-100" onclick="elegirOperacion('+')">
+                                +
+                            </button>
+                        </div>
+                        
+                        <!-- Fila 6: Botón igual -->
+                        <div class="col-12">
+                            <button class="btn btn-equals btn-calc w-100" onclick="calcular()">
+                                =
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="public/vendor/bootstrap.bundle.min.js"></script>
+    <script src="public/js/funtions.js"></script>
+</body>
+</html>
