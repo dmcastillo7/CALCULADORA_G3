@@ -53,6 +53,10 @@ function calcular() {
         case '-':
         resultado = primerNumero - segundoNumero;
             break;
+        // Multiplicación (Evelyn Condoy)
+         case '*':
+         resultado = primerNumero * segundoNumero;
+             break;
 
         default:
             return;
